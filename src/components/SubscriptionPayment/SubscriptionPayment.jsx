@@ -56,6 +56,7 @@ const SubscriptionPayment = () => {
                         autoComplete="cc-number"
                         placeholder="0000 0000 0000 0000"
                         maxLength="19"
+                        minLength="19"
                         required
                     />
                 </label>
@@ -72,6 +73,7 @@ const SubscriptionPayment = () => {
                             autoComplete="cc-exp"
                             placeholder="ММ/ГГ"
                             maxLength="5"
+                            pattern="(0[1-9]|1[0-2])\/\d{2}"
                             required
                         />
                     </label>
@@ -86,6 +88,7 @@ const SubscriptionPayment = () => {
                             autoComplete="cc-csc"
                             placeholder="•••"
                             maxLength="4"
+                            minLength="3"
                             required
                         />
                     </label>
